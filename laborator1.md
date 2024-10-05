@@ -13,4 +13,5 @@
 * Codul de stare returnat este 401 ce înseamnă că parametrii dați nu au trecut autentificarea
 ### Ce anteturi au fost trimise în răspuns?
 * Anteturile trimise în răspuns:
+  
 ![response_headers](.images/response_headers.png)
