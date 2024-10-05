@@ -28,14 +28,12 @@ User-Agent: Covalciuc Laurențiu`
 `POST /cars HTTP/1.1
 Host: sandbox.com
 Content-Type: application/x-www-form-urlencoded
-
 make=Toyota&model=Corolla&year=2020`
 ### Cerere de tip PUT:
 `PUT /cars/1 HTTP/1.1
 Host: sandbox.com
 Content-Type: application/json
 User-Agent: Covalciuc Laurențiu
-
 {
   "make": "Toyota",
   "model": "Corolla",
@@ -44,14 +42,14 @@ User-Agent: Covalciuc Laurențiu
 ### Posibil răspuns pentru cererea POST
 `HTTP/1.1 201 Created
 Content-Type: application/json
-
 {
   "id": 123,
   "make": "Toyota",
   "model": "Corolla",
   "year": 2020,
   "status": "created"
-}`
+}
+`
 * Situații în care serverul poate returna alte coduri de stare HTTP:
     * 200 OK: Serverul a primit și a procesat cu succes cererea, dar nu a fost creată nicio resursă nouă. De exemplu, dacă cererea POST a fost procesată, dar resursa exista deja sau a fost actualizată fără crearea unei noi înregistrări.
 
@@ -70,7 +68,8 @@ Content-Type: application/json
 `DELETE /cars/1 HTTP/1.1
 Host: sandbox.com
 `
+
 Această cerere de tip DELETE trimite o solicitare pentru a șterge resursa cu ID-ul 1. Metoda DELETE este potrivită în acest caz pentru a elimina permanent o resursă de pe server.
 
-# Sarcina Nr.3 HTTP_Quest
+## Sarcina Nr.3 HTTP_Quest
 * Fraza secretă: /home/devrdn/www/quest/progress/
